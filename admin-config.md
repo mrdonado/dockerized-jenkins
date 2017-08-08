@@ -27,3 +27,18 @@ Restart services:
 systemctl restart iptables
 systemctl restart ip6tables
 ```
+
+# Use iptables on Centos 7
+
+Stop and mask the firewalld service:
+
+```
+systemctl stop firewalld
+systemctl mask firewalld
+```
+
+Then, install "iptables-services" 
+
+```
+yum install iptables-services
+```
