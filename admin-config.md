@@ -12,3 +12,18 @@ In order to start docker, type:
 
 `sudo systemctl docker start`
 
+# Manage your iptables
+
+Relevant files:
+
+```
+/etc/sysconfig/iptables
+/etc/sysconfig/ip6tables
+```
+
+Restart services:
+
+```
+systemctl restart iptables
+systemctl restart ip6tables
+```
