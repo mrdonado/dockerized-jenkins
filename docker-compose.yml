@@ -6,7 +6,7 @@ services:
   jenkins:
     image: "jenkins:latest"
     ports:
-      - "49001:8080"
+      - "127.0.0.1:49001:8080"
     restart: "always"
     volumes:
       - "./data:/var/jenkins_home"
